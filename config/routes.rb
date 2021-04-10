@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
 
-  root to: 'homes#top'
-  resources :homes
+  get '/' => "homes#top"
+  resources :todolists
 end
